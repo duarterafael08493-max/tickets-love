@@ -1,13 +1,8 @@
 
 plugins {
     id("com.android.application")
-
-    // Firebase
     id("com.google.gms.google-services")
-
     id("kotlin-android")
-
-    // Flutter
     id("dev.flutter.flutter-gradle-plugin")
 }
 
@@ -19,14 +14,15 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_17
         targetCompatibility = JavaVersion.VERSION_17
+
+        // Necessário para as notificações
+        isCoreLibraryDesugaringEnabled = true
     }
 
     defaultConfig {
         applicationId = "com.example.tickets_love"
-
         minSdk = flutter.minSdkVersion
         targetSdk = flutter.targetSdkVersion
-
         versionCode = flutter.versionCode
         versionName = flutter.versionName
     }
@@ -38,7 +34,6 @@ android {
     }
 }
 
-// Configuração do Kotlin para Java 17
 kotlin {
     compilerOptions {
         jvmTarget.set(
@@ -49,4 +44,10 @@ kotlin {
 
 flutter {
     source = "../.."
+}
+
+dependencies {
+    coreLibraryDesugaring(
+        "com.android.tools:desugar_jdk_libs:2.1.4"
+    )
 }
