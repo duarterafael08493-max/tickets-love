@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "54339869490",
+    "project_id": "tickets-love",
+    "storage_bucket": "tickets-love.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:54339869490:android:c4f48404dcfa9960e1552b",
+        "android_client_info": {
+          "package_name": "com.example.tickets_love"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "54339869490-jgg7j8qfenu8l1fjeec8718ndrcqf1l0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCSmmm3Uhl0ZLDtYs6BsD2jki2FNdUZ9cI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "54339869490-jgg7j8qfenu8l1fjeec8718ndrcqf1l0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
